@@ -2,16 +2,20 @@
 Exercice : périmètre et aire d'un cercle
 */
 
-// Renvoie le périmètre d'un cercle
-function perimetre(rayon) {
-    return 2 * rayon * Math.PI;
+var r;
+prompt("La valeur du rayon r");
+console.log(r);
+
+function carre(r) {
+	return r * r;
 }
 
-// Renvoie l'aire d'un cercle
-function aire(rayon) {
-    return Math.pow(rayon, 2) * Math.PI;
+function perimetre(r) {
+	return 2 * Math.PI * r;
 }
 
-var r = Number(prompt("Entrez le rayon d'un cercle :"));
-console.log("Son périmètre vaut " + perimetre(r));
-console.log("Son aire vaut " + aire(r));
+function aire(r) {
+	return Math.PI * carre(r);
+}
+console.log(perimetre(2, "*", Math.PI, "*", r));
+console.log(aire(Math.PI, "*", carre(r)));
