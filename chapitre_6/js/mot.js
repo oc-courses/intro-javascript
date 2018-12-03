@@ -91,5 +91,5 @@ if (motInverse.toLowerCase() === motSaisi.toLowerCase()) {
     console.log("Ce n'est pas un palindrome");
 }
 
-var motLeetSpeak = convertirEnLeetSpeek(motSaisi);
+var motLeetSpeak = convertirEnLeetSpeak(motSaisi);
 console.log("Il s'écrit en leet speak " + motLeetSpeak);
