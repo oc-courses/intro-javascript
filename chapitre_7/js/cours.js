@@ -8,6 +8,13 @@ var stylo = {
 function MonObjet() {
     // Initialisation de l'objet
     // ...
+    // exemple pour notre stylo :
+    var stylo = {
+        type: "bille",
+        couleur: "bleu",
+        marque: "Bic"
+    };
+    return stylo;
 }
 // Instanciation d'un objet à partir du constructeur
 var monObj = new MonObjet();
