@@ -47,11 +47,7 @@ class Personnage {
   }
   // Renvoie la description du personnage
   decrire() {
-    return `${this.nom} a ${this.sante} points de vie, ${
-      this.force
-    } en force et ${this.xp} points d'expérience, ${
-      this.inventaire.or
-    } pièces d'or et ${this.inventaire.cles} clé(s)`;
+    return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience, ${this.inventaire.or} pièces d'or et ${this.inventaire.cles} clé(s)`;
   }
 }
 
