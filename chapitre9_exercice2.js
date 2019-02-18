@@ -28,11 +28,7 @@ class Personnage {
         cible.sante = 0;
         const bonusXP = 10;
         console.log(
-          `${this.nom} a tué ${
-            cible.nom
-          } et gagne ${bonusXP} points d'expérience, ${
-            cible.inventaire.or
-          } pièces d'or et ${cible.inventaire.cles} clé(s)`
+          `${this.nom} a tué ${cible.nom} et gagne ${bonusXP} points d'expérience, ${cible.inventaire.or} pièces d'or et ${cible.inventaire.cles} clé(s)`
         );
         this.xp += bonusXP;
         // L'inventaire de la victime est transféré à son vainqueur
@@ -41,17 +37,13 @@ class Personnage {
       }
     } else {
       console.log(
-        `${this.nom} n'a plus de points de vie et ne pas pas attaquer`
+        `${this.nom} n'a plus de points de vie et ne peut pas attaquer`
       );
     }
   }
   // Renvoie la description du personnage
   decrire() {
-    return `${this.nom} a ${this.sante} points de vie, ${
-      this.force
-    } en force et ${this.xp} points d'expérience, ${
-      this.inventaire.or
-    } pièces d'or et ${this.inventaire.cles} clé(s)`;
+    return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience, ${this.inventaire.or} pièces d'or et ${this.inventaire.cles} clé(s)`;
   }
 }
 
