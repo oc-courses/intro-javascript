@@ -8,9 +8,7 @@ const aurora = {
 
   // Renvoie la description du personnage
   decrire() {
-    return `${this.nom} a ${this.sante} points de vie, ${
-      this.force
-    } en force et ${this.xp} points d'expérience`;
+    return `${this.nom} a ${this.sante} points de vie, ${this.force} en force et ${this.xp} points d'expérience`;
   }
 };
 
