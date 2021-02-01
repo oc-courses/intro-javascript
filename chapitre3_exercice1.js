@@ -52,3 +52,20 @@ if (jourActuel === "lundi") {
 if (jourSuivant !== "") {
   console.log(`Demain, nous serons ${jourSuivant}`);
 }
+// Solution avec for
+// const jourActuel = "lundi";
+// let jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+// let jourSuivant = "";
+
+
+// for (let index = 0; index < jours.length; index++) {
+// 	if (jourActuel === "dimanche") {
+// 		jourSuivant = "lundi";
+// 	} else {
+// 		if (jourActuel === jours[index]) {
+// 			jourSuivant = jours[index+1];
+// 		}
+// 	}
+// }
+
+// console.log(jourSuivant);
